@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_products_product_lists",
+  "info": {
+    "displayName": "product-list",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "navbar": {
+      "type": "component",
+      "repeatable": true,
+      "component": "main.navbar"
+    },
+    "filterbutton": {
+      "type": "component",
+      "repeatable": true,
+      "component": "button.button"
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "products.card"
+    }
+  }
+}

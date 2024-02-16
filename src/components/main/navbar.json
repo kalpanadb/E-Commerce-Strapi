@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_main_navbars",
+  "info": {
+    "displayName": "navbar",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "colors": {
+      "type": "json"
+    },
+    "type": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_footer_left_contents",
+  "info": {
+    "displayName": "leftContent",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description": {
+      "type": "text"
+    },
+    "colors": {
+      "type": "json"
+    }
+  }
+}

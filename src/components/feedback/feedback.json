@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_feedback_feedbacks",
+  "info": {
+    "displayName": "insta",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "cardItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "main.brands"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": true,
+      "component": "button.button"
+    },
+    "colors": {
+      "type": "json"
+    }
+  }
+}

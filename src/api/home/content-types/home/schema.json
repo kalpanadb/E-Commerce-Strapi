@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "Home",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "header": {
+      "type": "component",
+      "repeatable": true,
+      "component": "main.header"
+    },
+    "navbar": {
+      "type": "component",
+      "repeatable": true,
+      "component": "main.navbar"
+    },
+    "topmain": {
+      "type": "component",
+      "repeatable": true,
+      "component": "main.top-main"
+    },
+    "brands": {
+      "type": "component",
+      "repeatable": true,
+      "component": "main.brands"
+    },
+    "categorey": {
+      "type": "component",
+      "repeatable": true,
+      "component": "main.categorey"
+    },
+    "productitems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "products.product-list"
+    },
+    "brandBanner": {
+      "type": "component",
+      "repeatable": true,
+      "component": "banner.banner"
+    },
+    "silderProduct": {
+      "type": "component",
+      "repeatable": true,
+      "component": "products.product-list"
+    },
+    "feedback": {
+      "type": "component",
+      "repeatable": true,
+      "component": "feedback.feedback"
+    },
+    "footer": {
+      "type": "dynamiczone",
+      "components": [
+        "footer.left-content",
+        "footer.footer-catlogue"
+      ]
+    },
+    "bottom": {
+      "type": "component",
+      "repeatable": true,
+      "component": "footer.bottom-footer"
+    }
+  }
+}

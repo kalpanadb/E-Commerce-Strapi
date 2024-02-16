@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_main_headers",
+  "info": {
+    "displayName": "header"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "headerbutton": {
+      "type": "component",
+      "repeatable": true,
+      "component": "button.button"
+    }
+  }
+}

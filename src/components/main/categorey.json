@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_main_categoreys",
+  "info": {
+    "displayName": "categorey"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "images": {
+      "type": "component",
+      "repeatable": true,
+      "component": "main.brands"
+    }
+  }
+}
