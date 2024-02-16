@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_products_product_navbars",
+  "info": {
+    "displayName": "product-navbar"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "navbar": {
+      "type": "component",
+      "repeatable": true,
+      "component": "main.navbar"
+    },
+    "filterbutton": {
+      "type": "component",
+      "repeatable": true,
+      "component": "button.button"
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "products.card"
+    }
+  }
+}

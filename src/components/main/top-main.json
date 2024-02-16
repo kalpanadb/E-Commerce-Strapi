@@ -1,0 +1,59 @@
+{
+  "collectionName": "components_main_top_mains",
+  "info": {
+    "displayName": "top-main",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "frame1": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "colors": {
+      "type": "json"
+    },
+    "description": {
+      "type": "text"
+    },
+    "topbutton": {
+      "type": "component",
+      "repeatable": true,
+      "component": "button.button"
+    },
+    "frame2": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
