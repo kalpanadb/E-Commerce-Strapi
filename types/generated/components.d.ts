@@ -4,6 +4,7 @@ export interface BannerBanner extends Schema.Component {
   collectionName: 'components_banner_banners';
   info: {
     displayName: 'banner';
+    description: '';
   };
   attributes: {
     title: Attribute.String;
@@ -12,6 +13,7 @@ export interface BannerBanner extends Schema.Component {
     image: Attribute.Media;
     Backgroundimage: Attribute.Media;
     color: Attribute.JSON;
+    image2: Attribute.Media;
   };
 }
 

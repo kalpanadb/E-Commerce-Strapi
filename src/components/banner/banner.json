@@ -1,7 +1,8 @@
 {
   "collectionName": "components_banner_banners",
   "info": {
-    "displayName": "banner"
+    "displayName": "banner",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -17,27 +18,39 @@
       "component": "button.button"
     },
     "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "Backgroundimage": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "color": {
       "type": "json"
+    },
+    "image2": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }
