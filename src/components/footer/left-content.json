@@ -22,6 +22,9 @@
     },
     "colors": {
       "type": "json"
+    },
+    "title": {
+      "type": "string"
     }
   }
 }

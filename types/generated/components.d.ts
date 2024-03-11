@@ -32,6 +32,16 @@ export interface ButtonButton extends Schema.Component {
   };
 }
 
+export interface ButtonColor extends Schema.Component {
+  collectionName: 'components_button_colors';
+  info: {
+    displayName: 'color';
+  };
+  attributes: {
+    colors: Attribute.JSON;
+  };
+}
+
 export interface FeedbackFeedback extends Schema.Component {
   collectionName: 'components_feedback_feedbacks';
   info: {
@@ -94,6 +104,7 @@ export interface FooterLeftContent extends Schema.Component {
     logo: Attribute.Media;
     description: Attribute.Text;
     colors: Attribute.JSON;
+    title: Attribute.String;
   };
 }
 
@@ -101,9 +112,13 @@ export interface MainBrands extends Schema.Component {
   collectionName: 'components_main_brands';
   info: {
     displayName: 'brands';
+    description: '';
   };
   attributes: {
     brandlogo: Attribute.Media;
+    productname: Attribute.String;
+    productcount: Attribute.String;
+    colors: Attribute.JSON;
   };
 }
 
@@ -139,7 +154,6 @@ export interface MainNavbar extends Schema.Component {
   attributes: {
     title: Attribute.String;
     link: Attribute.String;
-    colors: Attribute.JSON;
     type: Attribute.String;
   };
 }
@@ -166,12 +180,15 @@ export interface ProductsCard extends Schema.Component {
   collectionName: 'components_products_cards';
   info: {
     displayName: 'card';
+    description: '';
   };
   attributes: {
     cardimages: Attribute.Media;
     title: Attribute.String;
     content: Attribute.String;
     prize: Attribute.String;
+    link: Attribute.String;
+    colors: Attribute.JSON;
   };
 }
 
@@ -208,6 +225,7 @@ declare module '@strapi/types' {
     export interface Components {
       'banner.banner': BannerBanner;
       'button.button': ButtonButton;
+      'button.color': ButtonColor;
       'feedback.feedback': FeedbackFeedback;
       'footer.bottom-footer': FooterBottomFooter;
       'footer.footer-catlogue': FooterFooterCatlogue;
