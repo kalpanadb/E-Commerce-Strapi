@@ -1,19 +1,21 @@
 {
   "collectionName": "components_products_cards",
   "info": {
-    "displayName": "card"
+    "displayName": "card",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "cardimages": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "title": {
       "type": "string"
@@ -23,6 +25,12 @@
     },
     "prize": {
       "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "colors": {
+      "type": "json"
     }
   }
 }

@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_button_colors",
+  "info": {
+    "displayName": "color"
+  },
+  "options": {},
+  "attributes": {
+    "colors": {
+      "type": "json"
+    }
+  }
+}
