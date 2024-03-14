@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_banner_images",
+  "info": {
+    "displayName": "images",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
