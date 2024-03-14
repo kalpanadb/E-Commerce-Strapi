@@ -17,6 +17,17 @@ export interface BannerBanner extends Schema.Component {
   };
 }
 
+export interface BannerImages extends Schema.Component {
+  collectionName: 'components_banner_images';
+  info: {
+    displayName: 'images';
+    description: '';
+  };
+  attributes: {
+    image: Attribute.Media;
+  };
+}
+
 export interface ButtonButton extends Schema.Component {
   collectionName: 'components_button_buttons';
   info: {
@@ -39,6 +50,16 @@ export interface ButtonColor extends Schema.Component {
   };
   attributes: {
     colors: Attribute.JSON;
+  };
+}
+
+export interface ButtonLink extends Schema.Component {
+  collectionName: 'components_button_links';
+  info: {
+    displayName: 'link';
+  };
+  attributes: {
+    link: Attribute.String;
   };
 }
 
@@ -176,6 +197,109 @@ export interface MainTopMain extends Schema.Component {
   };
 }
 
+export interface ProductBreadcrum extends Schema.Component {
+  collectionName: 'components_product_breadcrums';
+  info: {
+    displayName: 'breadcrum';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String;
+    links: Attribute.Component<'button.link', true>;
+  };
+}
+
+export interface ProductCard extends Schema.Component {
+  collectionName: 'components_product_cards';
+  info: {
+    displayName: 'card';
+    description: '';
+  };
+  attributes: {
+    text: Attribute.String;
+    subimage: Attribute.Media;
+    image: Attribute.Media;
+    cardbutton: Attribute.Component<'button.button', true>;
+    content: Attribute.String;
+    color: Attribute.JSON;
+    prize1: Attribute.String;
+    prize2: Attribute.String;
+  };
+}
+
+export interface ProductDescription extends Schema.Component {
+  collectionName: 'components_product_descriptions';
+  info: {
+    displayName: 'description';
+  };
+  attributes: {
+    links: Attribute.Component<'button.link', true>;
+    description: Attribute.Text;
+    description1: Attribute.Text;
+    description2: Attribute.Text;
+    description3: Attribute.Text;
+    description4: Attribute.Text;
+    text: Attribute.String;
+    color: Attribute.JSON;
+  };
+}
+
+export interface ProductDetail extends Schema.Component {
+  collectionName: 'components_product_details';
+  info: {
+    displayName: 'detail';
+    description: '';
+  };
+  attributes: {
+    content1: Attribute.String;
+    content2: Attribute.String;
+  };
+}
+
+export interface ProductLeftcontent extends Schema.Component {
+  collectionName: 'components_product_leftcontents';
+  info: {
+    displayName: 'leftcontent';
+    description: '';
+  };
+  attributes: {
+    detail: Attribute.Component<'product.detail', true>;
+    name: Attribute.String;
+    image: Attribute.Media;
+    list: Attribute.Component<'product.detail', true>;
+    multiplesize: Attribute.Component<'product.size', true>;
+    taxname: Attribute.String;
+    prize1: Attribute.String;
+    prize2: Attribute.String;
+    buy: Attribute.Component<'button.button', true>;
+  };
+}
+
+export interface ProductRightcontent extends Schema.Component {
+  collectionName: 'components_product_rightcontents';
+  info: {
+    displayName: 'rightcontent';
+    description: '';
+  };
+  attributes: {
+    image: Attribute.Media;
+    sideimages: Attribute.Component<'banner.images', true>;
+    content: Attribute.String;
+  };
+}
+
+export interface ProductSize extends Schema.Component {
+  collectionName: 'components_product_sizes';
+  info: {
+    displayName: 'size';
+    description: '';
+  };
+  attributes: {
+    size: Attribute.String;
+    color: Attribute.JSON;
+  };
+}
+
 export interface ProductsCard extends Schema.Component {
   collectionName: 'components_products_cards';
   info: {
@@ -224,8 +348,10 @@ declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'banner.banner': BannerBanner;
+      'banner.images': BannerImages;
       'button.button': ButtonButton;
       'button.color': ButtonColor;
+      'button.link': ButtonLink;
       'feedback.feedback': FeedbackFeedback;
       'footer.bottom-footer': FooterBottomFooter;
       'footer.footer-catlogue': FooterFooterCatlogue;
@@ -236,6 +362,13 @@ declare module '@strapi/types' {
       'main.header': MainHeader;
       'main.navbar': MainNavbar;
       'main.top-main': MainTopMain;
+      'product.breadcrum': ProductBreadcrum;
+      'product.card': ProductCard;
+      'product.description': ProductDescription;
+      'product.detail': ProductDetail;
+      'product.leftcontent': ProductLeftcontent;
+      'product.rightcontent': ProductRightcontent;
+      'product.size': ProductSize;
       'products.card': ProductsCard;
       'products.product-list': ProductsProductList;
       'products.product-navbar': ProductsProductNavbar;

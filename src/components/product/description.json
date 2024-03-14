@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_product_descriptions",
+  "info": {
+    "displayName": "description"
+  },
+  "options": {},
+  "attributes": {
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "button.link"
+    },
+    "description": {
+      "type": "text"
+    },
+    "description1": {
+      "type": "text"
+    },
+    "description2": {
+      "type": "text"
+    },
+    "description3": {
+      "type": "text"
+    },
+    "description4": {
+      "type": "text"
+    },
+    "text": {
+      "type": "string"
+    },
+    "color": {
+      "type": "json"
+    }
+  }
+}
